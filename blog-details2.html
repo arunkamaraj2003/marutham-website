@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>Marutham Pediatric Care</title>
+
+  <link rel="stylesheet" href="assets/css/maicons.css">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+  <link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.css">
+
+  <link rel="stylesheet" href="assets/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="assets/css/theme.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .row1 {
+      display: flex;
+      justify-content: center;
+      margin: 40px;
+    }
+
+    .col-lg-8 {
+      width: 100%;
+      max-width: 900px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-thumb {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .post-thumb .slide {
+      display: none;
+    }
+
+    .post-thumb .slide img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(252, 250, 251, 0.992);
+      color: #fff;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .post-title {
+      margin-top: 20px;
+      font-size: 32px;
+      color: #333;
+    }
+
+    .post-content p {
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .lightbox-content {
+      margin: auto;
+      display: block;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 text-sm">
+            <div class="site-info">
+              <a href="#"><span class="mai-call text-primary"></span> +91 90433 04494</a>
+              <span class="divider">|</span>
+              <a href="#"><span class="mai-mail text-primary"></span> maruthamcdc@gmail.com</a>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right text-sm">
+            <div class="social-mini-button">
+              <a href="https://www.instagram.com/maruthampediatriccare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"><span class="mai-logo-instagram"></span></a>
+            </div>
+          </div>
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .topbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-primary">Marutham</span> Child development center</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupport">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">What we provide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div> <!-- .navbar-collapse -->
+      </div> <!-- .container -->
+    </nav>
+  </header>
+
+  <div class="page-section pt-5">
+    <div class="container">
+      <div class="row1">
+        <div class="col-lg-8">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb bg-transparent py-0 mb-5">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+              <li class="breadcrumb-item active" aria-current="page">What we provide</li>
+            </ol>
+          </nav>
+        </div>
+      </div> <!-- .row -->
+
+      <div class="row1">
+        <div class="col-lg-8">
+          <article class="blog-details">
+            <div class="post-thumb">
+              <!-- Slider Images -->
+              <div class="slide">
+                <img src="assets/Images/SE.jpg" alt="Slide 1" onclick="openLightbox(this.src)">
+              </div>
+              <div class="slide">
+                <img src="assets/Images/SE1.jpg" alt="Slide 2" onclick="openLightbox(this.src)">
+              </div>
+              <div class="slide">
+                <img src="assets/Images/SE3.jpg" alt="Slide 3" onclick="openLightbox(this.src)">
+              </div>
+              <div class="slide">
+                <img src="assets/Images/SE4.jpg" alt="Slide 4" onclick="openLightbox(this.src)">
+              </div>
+      
+      
+              <!-- Navigation Arrows -->
+              <a class="prev" onclick="changeSlide(-1)">❮</a>
+              <a class="next" onclick="changeSlide(1)">❯</a>
+            </div>
+      
+            <div class="container my-5">
+              <div class="content-wrapper">
+            
+                <h2 class="section-title">Special Education and Its Importance</h2>
+                <p>Special education is a comprehensive educational approach designed to support the diverse learning needs of children with various abilities and challenges. It is a practice rooted in understanding that every child learns differently. Rather than adhering strictly to traditional teaching methods, special education empowers children to learn in the way that suits them best — respecting their pace, interests, and unique ways of understanding the world.</p>
+            
+                <p>This form of education creates an inclusive and supportive environment where children can thrive academically, socially, emotionally, and developmentally. By offering personalized instruction and support, special education ensures that no child is left behind, promoting equal opportunities for learning and growth for every learner, regardless of their abilities or challenges.</p>
+            
+                <h4 class="mt-4 highlight">Benefits of Special Education</h4>
+                <p>Special education provides a wide range of benefits that extend beyond the classroom. It helps children develop holistically and gain the necessary skills to lead fulfilling lives. Here are some key benefits:</p>
+                <ul>
+                  <li><strong>Individualized learning</strong> – Children receive personalized education plans that are tailored to their strengths, needs, and learning styles, ensuring more effective outcomes.</li>
+                  <li><strong>Academic development</strong> – It supports continuous academic progress through modified curricula and learning aids that match the student’s capability and growth.</li>
+                  <li><strong>Enhancing social skill</strong> – With focused support, children learn how to interact with peers, build friendships, and participate in group settings with confidence.</li>
+                  <li><strong>Progress in behavior</strong> – Special education includes behavior intervention plans that guide children toward positive habits, routines, and self-regulation techniques.</li>
+                  <li><strong>Independency</strong> – Students are encouraged to become more self-reliant and confident in performing daily tasks, fostering a sense of autonomy.</li>
+                  <li><strong>Access to resources</strong> – Specialized tools, technologies, and therapy services are integrated into the learning process to help children achieve their maximum potential.</li>
+                  <li><strong>Emotional development</strong> – Emotional intelligence is nurtured through a safe and supportive environment that encourages self-expression and empathy.</li>
+                  <li><strong>Communication development</strong> – Programs often include speech and language support, helping children express themselves effectively using verbal or alternative methods.</li>
+                  <li><strong>Peer learning</strong> – Opportunities for learning alongside peers build collaboration, sharing, and understanding among diverse learners.</li>
+                  <li><strong>Motor development</strong> – Activities are designed to improve both fine and gross motor skills, promoting better physical coordination and confidence.</li>
+                  <li><strong>Linguistic development</strong> – Focused language instruction enhances vocabulary, grammar, comprehension, and overall language fluency.</li>
+                </ul>
+            
+                <h4 class="mt-4 highlight">Areas We Focus On</h4>
+                <p>Special education targets several essential areas that are critical to a child’s overall development and everyday functioning. These focus areas ensure that the child receives well-rounded support to thrive in various life situations:</p>
+                <ul>
+                  <li><strong>Academic skill</strong> – Building foundational skills in subjects like reading, math, and writing to enhance academic success.</li>
+                  <li><strong>Social skill</strong> – Teaching appropriate social behaviors, emotional recognition, and interaction techniques for better peer relationships.</li>
+                  <li><strong>Behavioral support</strong> – Developing strategies to manage behaviors effectively and encouraging positive reinforcement techniques.</li>
+                  <li><strong>Life skill</strong> – Equipping students with essential skills for everyday living, such as hygiene, safety, and time management.</li>
+                  <li><strong>Communication</strong> – Strengthening verbal, non-verbal, and augmentative communication methods for better expression and understanding.</li>
+                  <li><strong>Motor skill</strong> – Enhancing body coordination, balance, and motor planning through physical activities and therapies.</li>
+                  <li><strong>Vocational skill</strong> – Preparing older children and teens for future work environments through job-related skill-building and training.</li>
+                  <li><strong>Sensory play</strong> – Providing sensory-rich experiences that help children with sensory processing challenges to regulate and engage more comfortably.</li>
+                  <li><strong>Cognitive development</strong> – Supporting memory, reasoning, attention, and problem-solving to boost overall intellectual capabilities.</li>
+                  <li><strong>Daily living skill</strong> – Encouraging independence in performing essential self-care and daily tasks for better self-sufficiency in life.</li>
+                </ul>
+            
+              </div>
+            </div>
+            
+          </article>
+        </div>
+      </div>
+      
+      <!-- Lightbox Zoom Modal -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+      </div>
+        
+            
+            
+
+            
+              
+              
+              
+
+            
+
+            
+      
+    
+    </div> <!-- .container -->
+  </div> <!-- .page-section -->
+
+  
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row px-md-3">
+
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Instagram</h5>
+          <div class="footer-sosmed mt-3">
+            
+            <a href="https://www.instagram.com/maruthampediatriccare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank"><span class="mai-logo-instagram"></span></a>
+          </div>
+        </div>
+        
+        
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Address</h5>
+          <p class="footer-link mt-2">No: 2658, LIG 2, Tamil Nadu Housing Board, Avadi, Chennai 600 054</p>
+          
+        </div>
+
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Contact Number</h5>
+          <a href="#" class="footer-link">90433 04494</a>
+          
+        </div>
+
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Contact Mail</h5>
+          <a href="#" class="footer-link">maruthamcdc@gmail.com</a>
+          
+        </div>
+      </div>
+
+      <hr>
+
+      <p id="copyright">Copyright &copy; 2025 <a href="" target="_blank"></a>. All right reserved</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+  
+  <script src="assets/vendor/wow/wow.min.js"></script>
+  
+  <script src="assets/js/theme.js"></script>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+    showSlide(slideIndex);
+  
+    function showSlide(index) {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex = (index + slides.length) % slides.length;
+      slides[slideIndex].style.display = "block";
+    }
+  
+    function changeSlide(n) {
+      showSlide(slideIndex + n);
+    }
+  
+    function openLightbox(src) {
+      document.getElementById("lightbox").style.display = "block";
+      document.getElementById("lightbox-img").src = src;
+    }
+  
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'ArrowRight') changeSlide(1);
+      else if (e.key === 'ArrowLeft') changeSlide(-1);
+      else if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+  
+</body>
+</html>
